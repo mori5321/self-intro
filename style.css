@@ -1,0 +1,176 @@
+*, body {
+  /*font-family: 'Helvetica-Neue', 'Noto Sans Japanese', '游ゴシック Medium', '游ゴシック体', 'Yu Gothic Medium', YuGothic, 'ヒラギノ角ゴ ProN', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;*/
+  font-family: serif;
+}
+
+
+h1,h2,h3,h4,h5,h6 {
+  margin: 0;
+  /*font-weight: lighter;*/
+}
+
+
+body {
+  padding: 0;
+  margin: 0;
+  color: #28437C;
+}
+
+
+/* 共通系 */
+.responsible-wrapper {
+  max-width: 920px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+
+.wrapper {
+  padding: 32px 0 64px;
+}
+
+.txt-main-blue {
+  color: #28437C;
+}
+
+.txt-main-green {
+  /*color: #DB5461;*/
+  /*color: #DD7596;*/
+  color: #3891A6;
+}
+
+.txt-main-yellow {
+  color: #CBC336;
+}
+
+.txt-main-pink {
+  color: #AB0249;
+}
+
+/* ------- */
+
+
+.header-title {
+  display: flex;
+  align-items: center;
+}
+
+.header-title:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.header-content {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-navigation {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+
+
+.header-navigation-list {
+  cursor: pointer;
+  margin: 0 10px;
+}
+
+.header-navigation-list:hover {
+  opacity: 0.7;
+}
+
+
+#main-visual {
+  /*background: #C7666C;*/
+  position: relative;
+  height: 500px;
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+}
+
+#main-visual:before {
+  background-image: url('https://pbs.twimg.com/media/DMgaX5tVwAE_3-s.jpg');
+  background-size: cover;
+  content: '';
+  width: 100%;
+  position: absolute;
+  height: 500px;
+  z-index: -1;
+  filter: brightness(85%);
+}
+
+
+.main-visual-title {
+  font-family: serif;
+  font-size: 48px;
+  text-align-left;
+  color: white;
+}
+
+.main-visual-text {
+  font-family: serif;
+  font-size: 16px;
+  font-weight: 100;
+  text-align: left;
+  color: white;
+}
+
+
+.section-title {
+  text-align: center;
+  padding: 10px 0;
+  margin: 10px 0;
+  font-size: 30px;
+  font-weight: 100;
+}
+
+.section-content {
+  padding: 10px 0;
+}
+
+#introduction p {
+  font-size: 12px;
+  text-align: center;
+}
+
+#products {
+  background: #F1F1FF;
+}
+
+.drops {
+  display: flex;
+  justify-content: center;
+  padding: 30px 0;
+}
+
+.drops img {
+  width: 20px;
+  height: 20px;
+}
+
+.product-list {
+  display: flex;
+  justify-content: center;
+}
+
+.product {
+  width: 250px;
+  height: 300px;
+  margin: 25px;
+  background: #BBBBBB;
+}
+
+@media screen and (max-width: 1000px) {
+  .product-list {
+    display: block;
+  }
+
+  .product {
+    margin: 10px auto 30px;
+  }
+}
